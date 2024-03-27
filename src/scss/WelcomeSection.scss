@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body{
+	font-style: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes slide {
+    0%{
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+     
+  }
+
+.animate-text{
+    animation: slide .5s;
+}
+
+.page-width{
+    width: calc(100% - 5rem);
+    padding: 15px 20px;
+    margin: 20px auto;
+}
+
+.welcome-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    
+
+    .welcome-section-text{
+        width: 55%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+
+        .welcome-section-header{
+            font-size: 34px;
+            font-family: 'Oswald', sans-serif;
+            width: 80%;
+    
+            svg{
+                color: rgb(107, 91, 255);
+                margin-left: 10px ;
+                height: 30px;
+            }
+         
+        }
+
+        p{
+            width: 70.5%;
+            line-height: 25px;
+            margin: 40px 0;
+            font-weight: 500;
+        }
+    }
+
+    .welcome-section-image{
+        width: 45%;
+        height: 100%;
+        background: rgb(107, 91, 255);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

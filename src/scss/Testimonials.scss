@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+.testimonial-page-width{
+    width: calc(100% - 5rem);
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.testimonial-text{
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14.5px;
+
+    .testimonial-header{
+        font-weight: 800;
+    }
+
+    .bold-text{
+        font-size: 34px;
+        font-weight: 600;
+        color: rgb(49, 40, 130);
+        width: 70%; 
+    }
+
+    .debut-text{
+        margin: 20px 0px 0px 0px;
+    }
+  
+    span{
+        color: rgb(107, 91, 255);
+        font-weight: 800;
+        
+    }
+}
+
+.testimonial-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+
+    .testimonial{
+        width: 24%;
+        padding: 20px 10px;
+        font-size: 13.5px;
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        border-radius: 7px;
+        background:  rgba(107, 91, 255, 0.15);
+        color:  rgb(49, 40, 130);
+        font-family: 'Raleway', sans-serif;
+
+        .comment{
+            margin: 0px 0px 20px 0px;
+            line-height: 20px;
+
+        }
+
+        .customer-info{
+            display: flex;
+            align-items: center;
+            font-family: 'Manrope', sans-serif;
+            margin-top: auto;
+
+            .customer-name{
+
+                font-weight: 600;
+            }
+
+            .customer-company{
+                text-decoration: none;
+                color: rgb(107, 91, 255);
+                
+            }
+
+            .customer-image{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:rgb(49, 40, 130);
+                margin: 0px 10px 0px 0px;
+                border-radius: 50%;
+
+                svg{
+                    color: #fff;
+                    font-size: 15px;
+                }
+            }
+        }
+
+
+    }
+}
+

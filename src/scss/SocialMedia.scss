@@ -1,0 +1,30 @@
+.media-content{
+    position: fixed;
+    top: 25%;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    animation: mediaSlide ease-in-out .2s;
+
+    svg{
+        font-size: 20px;
+        color: rgb(107, 91, 255);
+        cursor: pointer;
+    }
+
+    svg:nth-child(2){
+        margin: 20px 0px 20px 0;
+    }
+}
+
+@keyframes mediaSlide {
+    0%{
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

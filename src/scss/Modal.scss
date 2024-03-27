@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+$navigationTextSize : 13px;
+$textSpacing : 1px;
+$purple: rgb(107, 91, 255);
+
+
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content{
+    font-family: 'Manrope', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 7px;
+    width: 500px;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+    outline: 0;
+    animation: modalSlide ease-in-out .5s;
+    text-align: center;
+  
+    .modal-header{
+        font-weight: bold;
+        color: rgb(107, 91, 255);
+        font-size: 15px;
+    }
+
+    .modal-text{
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 12.5px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+
+    .modal-button{
+        font-family: 'Manrope', sans-serif;
+        font-size: $navigationTextSize;
+        font-weight: 500;
+        letter-spacing: $textSpacing;
+        padding: 10px 20px;
+        outline: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #fff;
+        background: $purple;
+        border: 1.5px solid transparent;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .modal-button:hover{
+        background: transparent;
+        color: $purple;
+        border: 1.5px solid $purple;
+    }
+
+    .close-modal-button{
+        text-align: right;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0px 0px 20px 0;
+    }
+}
+
+@keyframes modalSlide {
+    0%{
+      transform: translate(-50%, 50%);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }

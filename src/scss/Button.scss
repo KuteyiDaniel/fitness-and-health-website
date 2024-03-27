@@ -1,0 +1,25 @@
+$navigationTextSize : 13px;
+$textSpacing : 1px;
+$purple: rgb(107, 91, 255);
+
+
+.button{
+    font-family: 'Manrope', sans-serif;
+    font-size: $navigationTextSize;
+    font-weight: 500;
+    letter-spacing: $textSpacing;
+    padding: 10px 20px;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: $purple;
+    border: 1.5px solid transparent;
+   
+}
+
+.button:hover{
+    background: transparent;
+    color: $purple;
+    border: 1.5px solid $purple;
+}

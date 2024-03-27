@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body{
+	font-style: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideshow {
+    overflow: hidden;
+    width: 500px;
+
+
+    .slideshowSlider {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        transition: ease 1000ms;
+             
+        .slide {
+            width: 100%;
+            display: inline-block;
+            flex: 0 0 auto;
+            
+            .quote{
+                width: 100%;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+        }
+
+      }
+  }
+  
+ 
+ 
+
+
+
+

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes slide {
+    0%{
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.article-section-page-width{
+    width: calc(100% - 5rem);
+    padding: 100px 20px 20px 20px;
+    margin: 0 auto;
+}
+
+.article-section{
+    width: 100%;
+    //min-height: 100vh;
+    //border: 1px solid rgb(107, 99, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .article-data{
+        width: 32%;
+        //border: 1px solid rgb(107, 99, 255);
+        border-radius: 30px;
+        overflow: hidden;
+        padding: 0px 0px 40px 0px;
+        display: flex;
+        flex-direction: column;
+    
+
+        .article-preview-image{
+            width: 100%;
+            border-radius: 30px;
+            height: 430px;
+            //object-fit: contain;
+        }
+
+        .article-preview-text{
+            padding: 20px 0px;
+          
+        }
+
+        .article-category{
+            padding: 10px 15px;    
+            border-radius: 5px;
+            background: rgb(210, 255, 255);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .article-title{
+            margin: 20px 0px;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        p{
+            color: rgb(128, 128, 128);
+            //font-family: 'Manrope', sans-serif;
+            font-family: "Prompt", sans-serif;
+            font-weight: 500;
+            font-style: normal;   
+            line-height: 30px;
+            text-align: left;
+            
+        }
+
+    
+          .read-more-button {
+            display: inline-flex;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            margin-top: auto;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            background: rgb(107,99,255);
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            align-items: center;
+            
+            svg{
+                margin-left: 5px;
+            }
+          }
+
+          .read-more-button:before {
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 100%;
+            left: 5%;
+            height: 10px;
+            width: 90%;
+            opacity: 0;
+            background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+            /* W3C */
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform, opacity;
+            transition-property: transform, opacity;
+          }
+          .read-more-button:hover, .read-more-button:focus, .read-more-button:active {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+            /* move the element up by 5px */
+          }
+          .read-more-button:hover:before, .read-more-button:focus:before, .read-more-button:active:before {
+            opacity: 1;
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+            /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+          }         
+    }
+
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+
+body{
+	font-style: inherit;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$navigationTextSize : 13px;
+$textSpacing : 1px;
+$purple: rgb(107, 91, 255);
+
+.navigation-page-width{
+    width: calc(100% - 5rem);
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.navigation-bar.navigation-offset{
+    background: #fff;
+    z-index: 2;
+
+    a{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.navigation-bar{
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    a{
+        text-decoration: none; color: rgb(0, 0, 0);
+    }
+
+   
+
+    .navigation-emblem{
+        display: flex; 
+        align-items: center;
+        font-size: 34px;
+
+        svg{
+            color: $purple;
+            margin-right: 10px ;
+        }
+        
+    
+     
+    }
+
+    .navigation-title{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        
+    }
+
+    .navigation-list{
+        display: flex;
+        list-style: none;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+       /* .navigation-link{
+            position: relative;
+        }
+
+        .navigation-link.active .active-line{
+            visibility: visible;
+            width: 100%;
+        }
+
+        .active-line{
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            background: $purple;
+            width: 0%;
+            animation: navSlide ease-in-out .2s;
+        }
+
+        @keyframes navSlide {
+            0%{
+              transform: translateY(-10px);
+              opacity: 0;
+            }
+          
+            100%{
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          */
+
+      
+
+        li{
+            margin: 0px 15px;
+            font-size: $navigationTextSize;
+            letter-spacing: $textSpacing;
+            font-weight: bold;
+            cursor: pointer;
+            transition: ease-in-out .4s;
+            display: block;
+           
+        }
+
+        li .navigation-link:hover{
+            font-size: 13.1px;
+            color: $purple;
+        }
+
+        li .navigation-link.active{
+            color: $purple;
+          
+        }
+    }
+
+    .navigation-content{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Manrope', sans-serif;
+        position: relative;
+
+       
+    }
+}
+
