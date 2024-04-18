@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes slide {
+    0%{
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.article-detail-page-width{
+    width: calc(100% - 5rem);
+    padding: 100px 20px 20px 20px;
+    margin: 0 auto;
+}
+
+.article-detail{
+    width: 100%;
+    //height: 100vh;
+    /*border: 1px solid rgb(107, 99, 255);*/
+   
+
+    .article-detail-header{
+        text-align: right;
+        font-family: "Lora", serif;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    .article-title{
+      font-family: "Lora", serif;
+      font-weight: 700;
+      margin: 10px 0px 0px 0px;
+      font-size: 20px;
+      //text-align: right;
+    }
+
+    .content-preview{
+      //display: flex;
+      //justify-content: right;
+      //text-align: right;
+      //padding: 0px 0px 0px 50px;
+    }
+
+    .article-content-preview{
+      //max-width: 75%;
+      font-size: 14.5px;
+      line-height: 25px;
+      //letter-spacing: 0.3px;
+      font-weight: 500;
+      font-family: "Manrope", sans-serif;
+      //color: black;
+    }
+
+    .content-writer{
+          margin: 20px 0px 0px 0px;
+          font-family: "Lora", serif;
+          font-weight: 600;
+        
+    }
+
+    .content-cover-image{
+      //width: 92.5%;
+      height: 500px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px auto 50px auto;
+      position: relative;
+
+      img{
+          width: 100%;
+          //height: 40vh;
+          object-fit: cover;
+          height: 100%;
+        }
+
+      .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+      }
+    }
+
+    .article-content{
+      //font-family: "Heebo", serif;
+      font-family: "Manrope", sans-serif;
+      line-height: 25px;
+
+      p{
+        font-size: 16px;
+      }
+
+      b{
+        font-size: 1.5vw;
+        //margin: 0px 0px 40px 0px;
+      }
+
+      .list-highlight{
+        font-weight: 800;
+      }
+    }
+ 
+}

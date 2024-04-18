@@ -14,6 +14,48 @@ body{
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 1025px) {
+    .banner-overlay-main-text{
+        width: 40%;
+    }
+
+    .banner-text-bold{
+        width: 42%;
+        font-size: 70px;
+    }
+
+    .banner-page-width{
+        width: calc(100% - 5rem);
+    }
+
+    .banner-image-section{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .banner-overlay{
+        font-size: 70px;
+    }
+
+    .banner-image{
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px){
+    .banner-text-bold{
+        font-size: 45px;
+    }
+
+    .banner-overlay{
+        font-size: 45px;
+    }
+
+    .banner-image{
+        object-fit: contain;
+    }
+}
+
 @keyframes slide {
     0%{
       transform: translateY(-20px);
@@ -27,7 +69,7 @@ body{
   }
 
 .banner-page-width{
-    width: calc(100% - 5rem);
+    //width: calc(100% - 5rem);
     padding: 100px 20px 20px 20px;
     margin: 0 auto;
 }
@@ -58,8 +100,8 @@ body{
 
         .banner-text-bold{
             font-family: 'Oswald', sans-serif;
-            font-size: 70px;
-            width: 42%;
+           
+
             line-height: 100%;
             margin: 15px 0 0 0;
         }
@@ -69,15 +111,15 @@ body{
     .banner-image-section{
         height: 65%;
         width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        //border-top-left-radius: 15px;
+        //border-top-right-radius: 15px;
         overflow: hidden;
         position: relative;
 
         .banner-image{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+       
         }
 
         .banner-overlay{
@@ -92,11 +134,11 @@ body{
             justify-content: center;
             display: flex;
             font-family: 'Oswald', sans-serif;
-            font-size: 70px;
+           
             color: #fff;
 
             .banner-overlay-main-text{
-                width: 40%;
+               
                 line-height: 100%;
                 
             }

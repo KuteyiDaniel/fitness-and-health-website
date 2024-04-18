@@ -5,6 +5,8 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import '../scss/ArticlePage.scss';
 import SocialMedia from '../components/SocialMedia';
 import BackToTopButton from '../components/BackToTopButton';
+import { NavLink } from 'react-router-dom'
+import Footer from '../components/Footer';
 
 interface CategoryColors {
   [category: string]: string;
@@ -15,9 +17,9 @@ const ArticlePage = () => {
 
   useEffect(() => {
     const colors: CategoryColors = {
-      'Mental Health': '#FFC0CB', // Light pink for Mental Health
-      'Nutrition': 'rgba(127, 255, 0, 0.3)',      // Light neon green for Nutrition
-      'Fitness': 'rgba(107, 91, 255, 0.15)',        // Light blue for Fitness
+      'Mental Health': '#FFC0CB',
+      'Nutrition': 'rgba(127, 255, 0, 0.3)',     
+      'Fitness': 'rgba(107, 91, 255, 0.15)',
     };
 
     // Set the category colors state
@@ -39,15 +41,16 @@ const ArticlePage = () => {
                 <header className="article-title">{article.articleTitle}</header>
                 <p>{article.articlePreview}</p>
               </div>
-              <a href="#" className="read-more-button">
+              <NavLink to={`/article/${article.id}`} className="read-more-button">
                 Read More <HiArrowNarrowRight />
-              </a>
+              </NavLink>
             </div>
           ))}
         </div>
       </div>
       <SocialMedia/>
       <BackToTopButton/>
+      <Footer/>
     </>
   );
 };

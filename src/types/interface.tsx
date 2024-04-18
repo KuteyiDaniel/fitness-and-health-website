@@ -2,7 +2,8 @@ import exp from "constants"
 
 export interface navigation {
     title: string,
-    path: string
+    path: string,
+    icon: any
 }
 
 export interface slideShow {
@@ -58,8 +59,12 @@ export interface categoryDifficulty {
 export interface articleInformation {
     coverImagePath: string,
     articleCategory: string,
-    articleTitle: string,
+    articleTitle: string[],
     articlePreview: string,
     articleContent: string,
     id: number
+    path: string
+    articleContentPreview:string
+    contentWriter?: string
+    detailCoverImagePath?: string
 }

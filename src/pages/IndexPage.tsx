@@ -49,15 +49,20 @@ const IndexPage = () => {
 
         <div className='main-container'>
             <NavBar/>
+            <Banner/>  
             <SocialMedia/>
-            <Banner/>
             <WelcomeSection/>
             <CategorySection/>
             <FAQ/>
             <Footer/>
             <BackToTopButton/>
             <Modal/>
+            
         </div>
+
+        /*
+         
+          */
       }
      
     </div>
